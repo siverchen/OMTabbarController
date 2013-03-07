@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC14F7F616E88FED00F06FAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC14F7F516E88FED00F06FAA /* UIKit.framework */; };
+		BC14F7F816E88FED00F06FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC14F7F716E88FED00F06FAA /* Foundation.framework */; };
+		BC14F7FA16E88FED00F06FAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC14F7F916E88FED00F06FAA /* CoreGraphics.framework */; };
+		BC14F80016E88FED00F06FAA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC14F7FE16E88FED00F06FAA /* InfoPlist.strings */; };
+		BC14F80216E88FED00F06FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F80116E88FED00F06FAA /* main.m */; };
+		BC14F80616E88FED00F06FAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F80516E88FED00F06FAA /* AppDelegate.m */; };
+		BC14F80816E88FED00F06FAA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC14F80716E88FED00F06FAA /* Default.png */; };
+		BC14F80A16E88FED00F06FAA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC14F80916E88FED00F06FAA /* Default@2x.png */; };
+		BC14F80C16E88FED00F06FAA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC14F80B16E88FED00F06FAA /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC14F7F216E88FED00F06FAA /* OMTabbarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMTabbarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC14F7F516E88FED00F06FAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC14F7F716E88FED00F06FAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC14F7F916E88FED00F06FAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC14F7FD16E88FED00F06FAA /* OMTabbarController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OMTabbarController-Info.plist"; sourceTree = "<group>"; };
+		BC14F7FF16E88FED00F06FAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC14F80116E88FED00F06FAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC14F80316E88FED00F06FAA /* OMTabbarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMTabbarController-Prefix.pch"; sourceTree = "<group>"; };
+		BC14F80416E88FED00F06FAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC14F80516E88FED00F06FAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC14F80716E88FED00F06FAA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BC14F80916E88FED00F06FAA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BC14F80B16E88FED00F06FAA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC14F7EF16E88FED00F06FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC14F7F616E88FED00F06FAA /* UIKit.framework in Frameworks */,
+				BC14F7F816E88FED00F06FAA /* Foundation.framework in Frameworks */,
+				BC14F7FA16E88FED00F06FAA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC14F7E916E88FED00F06FAA = {
+			isa = PBXGroup;
+			children = (
+				BC14F7FB16E88FED00F06FAA /* OMTabbarController */,
+				BC14F7F416E88FED00F06FAA /* Frameworks */,
+				BC14F7F316E88FED00F06FAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC14F7F316E88FED00F06FAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC14F7F216E88FED00F06FAA /* OMTabbarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC14F7F416E88FED00F06FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC14F7F516E88FED00F06FAA /* UIKit.framework */,
+				BC14F7F716E88FED00F06FAA /* Foundation.framework */,
+				BC14F7F916E88FED00F06FAA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC14F7FB16E88FED00F06FAA /* OMTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				BC14F80416E88FED00F06FAA /* AppDelegate.h */,
+				BC14F80516E88FED00F06FAA /* AppDelegate.m */,
+				BC14F7FC16E88FED00F06FAA /* Supporting Files */,
+			);
+			path = OMTabbarController;
+			sourceTree = "<group>";
+		};
+		BC14F7FC16E88FED00F06FAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC14F7FD16E88FED00F06FAA /* OMTabbarController-Info.plist */,
+				BC14F7FE16E88FED00F06FAA /* InfoPlist.strings */,
+				BC14F80116E88FED00F06FAA /* main.m */,
+				BC14F80316E88FED00F06FAA /* OMTabbarController-Prefix.pch */,
+				BC14F80716E88FED00F06FAA /* Default.png */,
+				BC14F80916E88FED00F06FAA /* Default@2x.png */,
+				BC14F80B16E88FED00F06FAA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC14F7F116E88FED00F06FAA /* OMTabbarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC14F80F16E88FED00F06FAA /* Build configuration list for PBXNativeTarget "OMTabbarController" */;
+			buildPhases = (
+				BC14F7EE16E88FED00F06FAA /* Sources */,
+				BC14F7EF16E88FED00F06FAA /* Frameworks */,
+				BC14F7F016E88FED00F06FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMTabbarController;
+			productName = OMTabbarController;
+			productReference = BC14F7F216E88FED00F06FAA /* OMTabbarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC14F7EA16E88FED00F06FAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cmc;
+			};
+			buildConfigurationList = BC14F7ED16E88FED00F06FAA /* Build configuration list for PBXProject "OMTabbarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC14F7E916E88FED00F06FAA;
+			productRefGroup = BC14F7F316E88FED00F06FAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC14F7F116E88FED00F06FAA /* OMTabbarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC14F7F016E88FED00F06FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC14F80016E88FED00F06FAA /* InfoPlist.strings in Resources */,
+				BC14F80816E88FED00F06FAA /* Default.png in Resources */,
+				BC14F80A16E88FED00F06FAA /* Default@2x.png in Resources */,
+				BC14F80C16E88FED00F06FAA /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC14F7EE16E88FED00F06FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC14F80216E88FED00F06FAA /* main.m in Sources */,
+				BC14F80616E88FED00F06FAA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC14F7FE16E88FED00F06FAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC14F7FF16E88FED00F06FAA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC14F80D16E88FED00F06FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC14F80E16E88FED00F06FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC14F81016E88FED00F06FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMTabbarController/OMTabbarController-Prefix.pch";
+				INFOPLIST_FILE = "OMTabbarController/OMTabbarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC14F81116E88FED00F06FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMTabbarController/OMTabbarController-Prefix.pch";
+				INFOPLIST_FILE = "OMTabbarController/OMTabbarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC14F7ED16E88FED00F06FAA /* Build configuration list for PBXProject "OMTabbarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC14F80D16E88FED00F06FAA /* Debug */,
+				BC14F80E16E88FED00F06FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC14F80F16E88FED00F06FAA /* Build configuration list for PBXNativeTarget "OMTabbarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC14F81016E88FED00F06FAA /* Debug */,
+				BC14F81116E88FED00F06FAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC14F7EA16E88FED00F06FAA /* Project object */;
+}
