@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "OMTabbar.h"
+#import "OMTabbarItem.h"
 
 @implementation AppDelegate
 
 - (void)dealloc
 {
     [_window release];
+    [_tabbarController release];
     [super dealloc];
 }
 
@@ -22,6 +25,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    _tabbarController = [[OMTabbarController alloc] init];
+    
+    OMTabbarItem *item = [[OMTabbarItem alloc] initWithTitle:@"cool" image:nil id:10 tag:10];
+    
+    OMTabbarItem *item2 = [[OMTabbarItem alloc] initWithTitle:@"nonono" image:nil id:10 tag:10];
+    [_tabbarController.tabbar setItems:[NSArray arrayWithObjects:item, item2, nil] animated:NO];
+    [self.window setRootViewController:_tabbarController];
     return YES;
 }
 

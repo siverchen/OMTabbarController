@@ -16,6 +16,9 @@
 		BC14F80816E88FED00F06FAA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC14F80716E88FED00F06FAA /* Default.png */; };
 		BC14F80A16E88FED00F06FAA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC14F80916E88FED00F06FAA /* Default@2x.png */; };
 		BC14F80C16E88FED00F06FAA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC14F80B16E88FED00F06FAA /* Default-568h@2x.png */; };
+		BC14F81416E8906C00F06FAA /* OMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F81316E8906C00F06FAA /* OMTabbarController.m */; };
+		BC14F81716E8921400F06FAA /* OMTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F81616E8921400F06FAA /* OMTabbar.m */; };
+		BC14F81A16E8921D00F06FAA /* OMTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F81916E8921D00F06FAA /* OMTabbarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		BC14F80716E88FED00F06FAA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BC14F80916E88FED00F06FAA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BC14F80B16E88FED00F06FAA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BC14F81216E8906C00F06FAA /* OMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTabbarController.h; sourceTree = "<group>"; };
+		BC14F81316E8906C00F06FAA /* OMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTabbarController.m; sourceTree = "<group>"; };
+		BC14F81516E8921400F06FAA /* OMTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTabbar.h; sourceTree = "<group>"; };
+		BC14F81616E8921400F06FAA /* OMTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTabbar.m; sourceTree = "<group>"; };
+		BC14F81816E8921D00F06FAA /* OMTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTabbarItem.h; sourceTree = "<group>"; };
+		BC14F81916E8921D00F06FAA /* OMTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTabbarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 				BC14F80416E88FED00F06FAA /* AppDelegate.h */,
 				BC14F80516E88FED00F06FAA /* AppDelegate.m */,
 				BC14F7FC16E88FED00F06FAA /* Supporting Files */,
+				BC14F81216E8906C00F06FAA /* OMTabbarController.h */,
+				BC14F81316E8906C00F06FAA /* OMTabbarController.m */,
+				BC14F81516E8921400F06FAA /* OMTabbar.h */,
+				BC14F81616E8921400F06FAA /* OMTabbar.m */,
+				BC14F81816E8921D00F06FAA /* OMTabbarItem.h */,
+				BC14F81916E8921D00F06FAA /* OMTabbarItem.m */,
 			);
 			path = OMTabbarController;
 			sourceTree = "<group>";
@@ -166,6 +181,9 @@
 			files = (
 				BC14F80216E88FED00F06FAA /* main.m in Sources */,
 				BC14F80616E88FED00F06FAA /* AppDelegate.m in Sources */,
+				BC14F81416E8906C00F06FAA /* OMTabbarController.m in Sources */,
+				BC14F81716E8921400F06FAA /* OMTabbar.m in Sources */,
+				BC14F81A16E8921D00F06FAA /* OMTabbarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +261,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OMTabbarController/OMTabbarController-Prefix.pch";
 				INFOPLIST_FILE = "OMTabbarController/OMTabbarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -254,6 +273,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OMTabbarController/OMTabbarController-Prefix.pch";
 				INFOPLIST_FILE = "OMTabbarController/OMTabbarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
