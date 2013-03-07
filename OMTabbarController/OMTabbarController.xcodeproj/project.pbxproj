@@ -19,6 +19,8 @@
 		BC14F81416E8906C00F06FAA /* OMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F81316E8906C00F06FAA /* OMTabbarController.m */; };
 		BC14F81716E8921400F06FAA /* OMTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F81616E8921400F06FAA /* OMTabbar.m */; };
 		BC14F81A16E8921D00F06FAA /* OMTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BC14F81916E8921D00F06FAA /* OMTabbarItem.m */; };
+		BCAC056A16E8ABF90094F5BE /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC056916E8ABF90094F5BE /* Cook.m */; };
+		BCAC056D16E8ACF20094F5BE /* NeCook.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAC056C16E8ACF20094F5BE /* NeCook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		BC14F81616E8921400F06FAA /* OMTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTabbar.m; sourceTree = "<group>"; };
 		BC14F81816E8921D00F06FAA /* OMTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTabbarItem.h; sourceTree = "<group>"; };
 		BC14F81916E8921D00F06FAA /* OMTabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTabbarItem.m; sourceTree = "<group>"; };
+		BCAC056816E8ABF90094F5BE /* Cook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
+		BCAC056916E8ABF90094F5BE /* Cook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
+		BCAC056B16E8ACF20094F5BE /* NeCook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeCook.h; sourceTree = "<group>"; };
+		BCAC056C16E8ACF20094F5BE /* NeCook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeCook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 				BC14F81616E8921400F06FAA /* OMTabbar.m */,
 				BC14F81816E8921D00F06FAA /* OMTabbarItem.h */,
 				BC14F81916E8921D00F06FAA /* OMTabbarItem.m */,
+				BCAC056816E8ABF90094F5BE /* Cook.h */,
+				BCAC056916E8ABF90094F5BE /* Cook.m */,
+				BCAC056B16E8ACF20094F5BE /* NeCook.h */,
+				BCAC056C16E8ACF20094F5BE /* NeCook.m */,
 			);
 			path = OMTabbarController;
 			sourceTree = "<group>";
@@ -184,6 +194,8 @@
 				BC14F81416E8906C00F06FAA /* OMTabbarController.m in Sources */,
 				BC14F81716E8921400F06FAA /* OMTabbar.m in Sources */,
 				BC14F81A16E8921D00F06FAA /* OMTabbarItem.m in Sources */,
+				BCAC056A16E8ABF90094F5BE /* Cook.m in Sources */,
+				BCAC056D16E8ACF20094F5BE /* NeCook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,7 @@
 				BC14F81116E88FED00F06FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,7 @@
 #import "OMTabbarController.h"
 #import "OMTabbarItem.h"
 
-#define DefaultBarHeight 44
+#define DefaultBarHeight 100
 
 typedef enum {
     TabbarBindType_VC,
@@ -81,15 +81,29 @@ typedef enum {
         _classNames = nil;
     }
     
-    _currentViewController = [[NSClassFromString([classNames objectAtIndex:0]) alloc] init];
     _classNames = [classNames retain];
+    _currentViewController = [[NSClassFromString([_classNames objectAtIndex:0]) alloc] init];
+    [self.view insertSubview:_currentViewController.view atIndex:0];
 }
 
 - (void)setSelectIndex:(NSUInteger)selectIndex Animated:(BOOL)animated{
     if (_selectIndex == selectIndex){
         NSLog(@"same");
     }else{
-        NSLog(@"no");
+        switch (bindType) {
+            case TabbarBindType_Class:
+                if (_currentViewController){
+                    [_currentViewController.view removeFromSuperview];
+                    [_currentViewController release];
+                    _currentViewController = nil;
+                }
+                _currentViewController = [[NSClassFromString([_classNames objectAtIndex:selectIndex]) alloc] init];
+                break;
+                
+            default:
+                break;
+        }
+        [self.view insertSubview:_currentViewController.view atIndex:0];
         _selectIndex = selectIndex;
     }
 }
