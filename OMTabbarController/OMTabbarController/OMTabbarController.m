@@ -9,7 +9,7 @@
 #import "OMTabbarController.h"
 #import "OMTabbarItem.h"
 
-#define DefaultBarHeight 100
+#define DefaultBarHeight 44
 
 typedef enum {
     TabbarBindType_VC,
@@ -41,7 +41,7 @@ typedef enum {
     if (self = [super init]){
         _tabbar = [[OMTabbar alloc] init];
         [_tabbar setDelegate:self];
-        [_tabbar setBackgroundColor:[UIColor blueColor]];
+        [_tabbar setBackgroundColor:[UIColor clearColor]];
         [_tabbar setFrame:CGRectMake(0, self.view.frame.size.height - DefaultBarHeight, self.view.frame.size.width, DefaultBarHeight)];
     }
     return self;
@@ -60,7 +60,7 @@ typedef enum {
     }
     _viewControllers = [viewControllers retain];
     _currentViewController = [_viewControllers objectAtIndex:0];
-    [self.view insertSubview:_currentViewController.view atIndex:0];
+    [self addViewControllerView];
 }
 
 - (void)bindViewControllersWithNibnames:(NSArray *)nibNames{
@@ -71,7 +71,7 @@ typedef enum {
     }
     _nibNames = [nibNames retain];
     _currentViewController = [[NSClassFromString([nibNames objectAtIndex:0]) alloc] initWithNibName:[nibNames objectAtIndex:0] bundle:nil];
-    [self.view insertSubview:_currentViewController.view atIndex:0];
+    [self addViewControllerView];
 }
 
 - (void)bindViewControllersWithClassnames:(NSArray *)classNames{
@@ -83,7 +83,7 @@ typedef enum {
     
     _classNames = [classNames retain];
     _currentViewController = [[NSClassFromString([_classNames objectAtIndex:0]) alloc] init];
-    [self.view insertSubview:_currentViewController.view atIndex:0];
+    [self addViewControllerView];
 }
 
 - (void)setSelectIndex:(NSUInteger)selectIndex Animated:(BOOL)animated{
@@ -103,9 +103,22 @@ typedef enum {
             default:
                 break;
         }
-        [self.view insertSubview:_currentViewController.view atIndex:0];
+        [self addViewControllerView];
         _selectIndex = selectIndex;
     }
+}
+
+
+/**-----**/
+
+- (void)addViewControllerView{
+    _currentViewController.view.frame = (CGRect){
+        .origin.x = 0,
+        .origin.y = 0,
+        .size.width = self.view.frame.size.width,
+        .size.height = self.view.frame.size.height - _tabbar.frame.size.height
+    };
+    [self.view insertSubview:_currentViewController.view atIndex:0];
 }
 
 #pragma mark - OMTabbarDelegate

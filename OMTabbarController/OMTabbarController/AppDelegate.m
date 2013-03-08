@@ -22,21 +22,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     _tabbarController = [[OMTabbarController alloc] init];
     
     OMTabbarItem *item = [[OMTabbarItem alloc] initWithTitle:@"cool" image:nil id:10 tag:10];
     
     OMTabbarItem *item2 = [[OMTabbarItem alloc] initWithTitle:@"nonono" image:nil id:10 tag:10];
     
-    
     [_tabbarController.tabbar setItems:[NSArray arrayWithObjects:item, item2, nil] animated:NO];
+    
+    [_tabbarController.tabbar setHeight:100];
     
     [_tabbarController bindViewControllersWithClassnames:[NSArray arrayWithObjects:@"Cook", @"NeCook" ,nil]];
     
     [self.window setRootViewController:_tabbarController];
+    
     return YES;
 }
 

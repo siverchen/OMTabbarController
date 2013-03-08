@@ -22,7 +22,7 @@
 @property (nonatomic, retain) OMTabbarItem *selectedItem;
 @property (nonatomic, assign) id <OMTabbarDelegate> delegate;
 - (void)setItems:(NSArray *)items animated:(BOOL)animated;
-
+- (void)setHeight:(CGFloat)height;
 @end
 
 @protocol OMTabbarDelegate <NSObject>

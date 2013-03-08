@@ -38,10 +38,17 @@
 
 - (void)setHeight:(CGFloat)height{
     CGRect frame = self.frame;
-    self.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height);
+    self.frame = CGRectMake(frame.origin.x, frame.origin.y + frame.size.height - height, frame.size.width, height);
+    for (OMTabbarItem *item in _items){
+        CGRect iframe = item.frame;
+        [item setFrame:(CGRect){
+            .origin.x = iframe.origin.x,
+            .origin.y = iframe.origin.y,
+            .size.width = iframe.size.width,
+            .size.height = height
+        }];
+    }
 }
-
-
 
 
 /**-------**/
